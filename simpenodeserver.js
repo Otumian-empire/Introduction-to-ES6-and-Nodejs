@@ -12,6 +12,6 @@ const server = http.createServer(function (req, res) {
 })
 
 // listen to host on port
-server.listen(3000, '127.0.0.1')
+// server.listen(3000, '127.0.0.1')
 
 console.log('server running')
