@@ -257,17 +257,3 @@ import { div as divide, mod as remiander } from './utils.mjs'
 console.log(divide(2, 3))
 console.log(remiander(2, 3))
 console.log();
-
-
-// using require instead of import/from approach
-// create dash.js
-// require dash
-/* 
-const dash = require('./dash.js')
-
-console.log(dash.add(2, 3))
-console.log(dash.sub(2, 3))
-
-this will lead to an error because, es6notes, is extension, mjs
-*/
-
