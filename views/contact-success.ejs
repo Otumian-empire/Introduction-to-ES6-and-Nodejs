@@ -10,15 +10,20 @@
 
 <body>
     <%- include('partials/nav') %>
-    <h1>Profile page</h1>
+    <h1>Contact-success page</h1>
 
-    <p>Welcome <%= name %></p>
     <div>
-        <h2>Hobbies</h2>
+        <h2>Contact Details</h2>
         <ul>
-            <% hobbies.forEach(function (hobby) { %>
-            <li><%= hobby %></li>
-            <%}) %>
+            <% if (data.fullName) { %>
+            <li><%= data.fullName %></li>
+            <% } %>
+            <% if (data.email) { %>
+            <li><%= data.email %></li>
+            <% } %>
+            <% if (data.message) { %>
+            <li><%= data.message %></li>
+            <% } %>
         </ul>
     </div>
 

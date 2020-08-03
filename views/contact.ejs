@@ -4,43 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-    <style>
-        body {
-            padding: 5em 11em;
-            font-family: Georgia, "Times New Roman",
-                Times, serif;
-            color: purple;
-            background-color: #d8da3d
-        }
-
-        h1 {
-            font-family: Helvetica, Geneva, Arial,
-                SunSans-Regular, sans-serif
-        }
-
-        a:link {
-            color: blue
-        }
-
-        a:visited {
-            color: purple
-        }
-
-        h1,
-        h2 {
-            font-size: 48px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
-        }
-
-        p,
-        li {
-            font-size: 16px;
-            text-align: center;
-        }
-    </style>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/assets/styles.css">
 </head>
 
 <body>
@@ -48,7 +15,25 @@
     <h1>Contact page</h1>
 
     <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quis aliquid laborum sapiente quod alias deleniti voluptatem blanditiis cumque dicta minima ab maiores iste vero harum, perspiciatis nisi inventore ipsam.
+        <!-- <form id="contact-form" action="" method="">
+            <label for="fullName"></label><br>
+            <input type="text" name="fullName" placeholder="fullname" value="<%= qs.fullName %>"><br>
+            <label for="email"></label><br>
+            <input type="email" name="email" placeholder="email" value="<%= qs.email %>"><br>
+            <label for="message"></label><br>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="message"><%= qs.message %></textarea><br>
+            <input type="submit" name="" value="submit">
+        </form> -->
+
+        <form id="contact-form" action="/contact" method="POST">
+            <label for="fullName"></label><br>
+            <input type="text" name="fullName" placeholder="fullname" value="<%= qs.fullName %>"><br>
+            <label for="email"></label><br>
+            <input type="email" name="email" placeholder="email" value="<%= qs.email %>"><br>
+            <label for="message"></label><br>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="message"><%= qs.message %></textarea><br>
+            <input type="submit" name="" value="submit">
+        </form>
     </div>
 
 </body>

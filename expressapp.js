@@ -78,4 +78,8 @@ app.get('/contact', function (req, res) {
 // list to a port, this was done with the server created from the http module
 // where the port and host was passed
 // server.listen(PORT, HOST)
-app.listen(3000)
+// app.listen(3000)
+
+// this continues in someapp.js
+// I have to comment out the app.listen(3000) so that It could
+//  be listened from someapp.js

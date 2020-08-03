@@ -1,15 +1,16 @@
 {
-  "name": "introductiontsjs",
-  "version": "1.0.0",
-  "description": "an introduction to javascript and nodejs and it core modules and other packages such as express, etc ..",
-  "main": "expressapp.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "me",
-  "license": "ISC",
-  "dependencies": {
-    "ejs": "^3.1.3",
-    "express": "^4.17.1"
-  }
+    "name": "introductiontsjs",
+    "version": "1.0.0",
+    "description": "an introduction to javascript and nodejs and it core modules and other packages such as express, etc ..",
+    "main": "someapp.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "me",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "ejs": "^3.1.3",
+        "express": "^4.17.1"
+    }
 }
