@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <style>
+        body {
+            padding: 5em 11em;
+            font-family: Georgia, "Times New Roman",
+                Times, serif;
+            color: purple;
+            background-color: #d8da3d
+        }
+
+        h1 {
+            font-family: Helvetica, Geneva, Arial,
+                SunSans-Regular, sans-serif
+        }
+
+        a:link {
+            color: blue
+        }
+
+        a:visited {
+            color: purple
+        }
+
+        h1,
+        h2 {
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        p,
+        li {
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Site navigation menu -->
+    <%- include('partials/nav') %>
+
+    <!-- Main content -->
+    <h1>My first styled page</h1>
+
+    <p>Welcome to my styled page!
+
+    <p>It lacks images, but at least it has style.
+        And it has links, even if they don't go
+        anywhere&hellip;
+
+    <p>There should be more here, but I don't know
+        what yet.
+
+        <!-- Sign and date the page, it's only polite! -->
+    <address>Made 5 April 2020<br>
+        by myself.</address>
+</body>
+
+</html>
+
+<!-- https://www.w3.org/Style/Examples/011/firstcss.en.html -->
