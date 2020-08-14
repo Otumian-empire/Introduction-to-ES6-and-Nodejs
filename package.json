@@ -2,7 +2,7 @@
     "name": "introductiontsjs",
     "version": "1.0.0",
     "description": "an introduction to javascript and nodejs and it core modules and other packages such as express, etc ..",
-    "main": "todoapp.js",
+    "main": "brades6.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
