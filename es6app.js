@@ -56,7 +56,7 @@ console.log();
 // reading and writing into files - using node `fs` core module
 const fs = require('fs')
 
-// reads file synchronuously - reads file before any line after 
+// reads file synchronously - reads file before any line after 
 // this will actually block the code
 // this is a binary data as such must be encoded - utf8
 const dummyData = fs.readFileSync('dummy.txt', 'utf8')
@@ -69,7 +69,7 @@ console.log()
 
 
 // reading and writing data async
-// reads file asynchronuously
+// reads file asynchronously
 // this will actually does not block the code
 // this is a binary data as such must be encoded - utf8
 
@@ -80,7 +80,7 @@ fs.readFile('./dummy.txt', 'utf8', function (error, data) {
 
         // just like readFile
         fs.writeFileSync('newdummy.txt', data)
-        console.log('after writing asyc')
+        console.log('after writing async')
     } else {
         console.log(error.toString())
     }
@@ -102,5 +102,5 @@ console.log('folder created ------------');
 fs.rmdirSync('public')
 console.log('folder deleted ------------');
 
-// can not remove a non-mempty directry
+// can not remove a non-empty directory
 

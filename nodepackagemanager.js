@@ -1,6 +1,6 @@
-// node packahe manger - npm
+// node package manger - npm
 // https://www.npmjs.com is where you can find more about nodejs packages
-// npm is a cli-tool for mananging nodejs packages/modules
+// npm is a cli-tool for managing nodejs packages/modules
 // npm install module - installs the module
 // npm uninstall module - uninstalls the module
 

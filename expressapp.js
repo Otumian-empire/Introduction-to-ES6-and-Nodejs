@@ -55,7 +55,7 @@ app.set('view engine', 'ejs')
 // so we say res.render('profile') without the .ejs or .html
 // any other data we want to pass to the view can be passed through an object,
 // which is a second parameter after the view is passed
-// apart from the paramter taken from the url, we can also pass data as well
+// apart from the parameter taken from the url, we can also pass data as well
 app.get('/profile/:name', function (req, res) {
 
     res.render(`profile`, {

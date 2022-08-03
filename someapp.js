@@ -15,7 +15,7 @@ app.set('view engine', 'ejs')
 //     console.log(req.url)
 //     next()
 // })
-// instead of the above we'd best use expressmiddleware for this
+// instead of the above we'd best use express middleware for this
 app.use('/assets', express.static('assets'))
 
 app.get('/profile/:name', function (req, res) {

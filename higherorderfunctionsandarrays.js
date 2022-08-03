@@ -1,6 +1,6 @@
 // Javascript array method
 const companies = [
-    { name: "company one", category: "Finanace", start: 1981, end: 2014 },
+    { name: "company one", category: "Finance", start: 1981, end: 2014 },
     { name: "company two", category: "Retail", start: 1982, end: 2004 },
     { name: "company three", category: "Auto", start: 1983, end: 2003 },
     { name: "company four", category: "Tech", start: 1983, end: 2005 },
@@ -19,7 +19,7 @@ console.log()
 
 // forEach - loop through the array
 console.log("looping through companies using forEach")
-companies.forEach(function(company) {
+companies.forEach(function (company) {
     console.log(company)
 })
 console.log()
@@ -43,7 +43,7 @@ console.log("Filtering ages using the filter method")
 tempArr = []
 console.log(ages.filter(e => e >= 21))
 
-tempArr = ages.filter(function(age) {
+tempArr = ages.filter(function (age) {
     if (age >= 21) {
         return true
     }
@@ -67,7 +67,7 @@ console.log()
 // map methods
 someArr = []
 
-someArr = companies.map(function(company) {
+someArr = companies.map(function (company) {
     return `${company.name} [${company.start} - ${company.end}]`
 })
 
@@ -79,7 +79,7 @@ console.log()
 
 
 // sort
-// sort works in some wierd way, so be more be careful
+// sort works in some weird way, so be more be careful
 let normalSortedArray = ages.sort()
 console.log(normalSortedArray)
 
@@ -88,7 +88,7 @@ console.log(normalSortedArray)
 
 // this fixes the above by comparing
 console.log("this fixes the above by comparing, using a for loop")
-let properlySortedArray = ages.sort(function(num1, num2) {
+let properlySortedArray = ages.sort(function (num1, num2) {
     if (num1 > num2) {
         return 1
     } else {
@@ -119,7 +119,7 @@ for (let i = 0; i < ages.length; i++) {
 
 console.log(arrSum)
 
-arrSum = ages.reduce(function(total, age) {
+arrSum = ages.reduce(function (total, age) {
     return total + age
 }, 0)
 console.log("es5", arrSum)

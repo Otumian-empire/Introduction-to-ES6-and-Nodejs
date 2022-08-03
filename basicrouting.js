@@ -19,7 +19,7 @@ const server = http.createServer(function (req, res) {
         case '/api/':
             let myJsonData = {
                 name: "Best node app",
-                dev: "saitama dev",
+                dev: "Saitama dev",
                 hope: "Wait"
             }
             res.writeHead(200, { 'Content-Type': 'application/json' })

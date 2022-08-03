@@ -28,14 +28,13 @@ var numArr = []
 
 numArr[0] = 1000
 
-for (var i = 0; i < 10; i++)
-{
+for (var i = 0; i < 10; i++) {
 	numArr.push(i * i);
 }
 
 console.log(numArr)
 
-console.log("My favourite colour is " + colors[2] + 
+console.log("My favourite colour is " + colors[2] +
 	" and my favourite number is " + numArr[2])
 
 // array Object: var arr = new Array(...)
@@ -44,7 +43,7 @@ var foo = new Array('black', 'zeria', 'hexa', 'nanase')
 console.log(foo)
 
 // array has a property called length, sort, reverse
-console.log("The size of \"" + foo + "\" is " + foo.length) 
+console.log("The size of \"" + foo + "\" is " + foo.length)
 console.log(foo.sort())
 console.log(foo.reverse())
 
@@ -59,15 +58,15 @@ var i = numArr.length - 1;
 
 console.log('while loop')
 
-while (i >= 0 ) {
+while (i >= 0) {
 	console.log(numArr[i])
 	i--;
 }
 
 i = 0;
 
-colors.forEach(e=>console.log(e, e.length))
-numArr.forEach(n=>console.log(n, n+2))
+colors.forEach(e => console.log(e, e.length))
+numArr.forEach(n => console.log(n, n + 2))
 
 
 // conditionals: if, if else, switch
@@ -121,18 +120,18 @@ switch (grade) {
 
 var Person = {
 	firstName: "Daniel",
-	lastName: "Hammeri",
+	lastName: "Valved",
 	DoB: "2nd March, 2000",
 	job: "Software Engineer",
 	fluency: ['english', 'Ga', 'Maths', 'Python', 'Js'],
-	edu : {
+	edu: {
 		highSch: 'Lambda Academy of Tech Wizards, Witches and Maniacs',
-		college: "Disymmetrical college of electronic\
+		college: "Dissymmetrical college of electronic\
 		and electrical technical and vocational isekai"
 	},
 	// here, this.attribute == Object.attribute
 	// this is a function, as such call with parenthesis
-	fullName: function() {
+	fullName: function () {
 		return this.firstName + " " + Person.lastName
 	}
 
@@ -144,8 +143,8 @@ console.log('first name: ' + Person['firstName'])
 console.log('last name: ' + Person.lastName)
 console.log('full name: ' + Person.fullName())
 console.log('Date OF Birth: ' + Person.DoB)
-console.log('job: '+ Person['job'])
-console.log('first flueny: ' + Person.fluency[0])
+console.log('job: ' + Person['job'])
+console.log('first fluency: ' + Person.fluency[0])
 console.log('HS edu: ' + Person.edu.highSch)
 console.log('')
 
@@ -154,11 +153,11 @@ console.log('')
 // obj.attr = val
 
 var Human = new Object()
-Human.name = "Daniel Asri"
-Human.YoB = 2000
+Human.name = "Daniel Cormier"
+Human.YoB = 1900
 Human.MoB = "April"
-Human.DoB = 3
-Human.dateOfBirth = function() {
+Human.DoB = 1
+Human.dateOfBirth = function () {
 	return this.DoB + " " + this.MoB + ", " + this.YoB
 }
 
@@ -170,7 +169,7 @@ console.log(Human.dateOfBirth())
 console.log('')
 
 
-// another way is to use the contructor
+// another way is to use the constructor
 // function name(parameter list) {
 // 		attributes;
 //		methods;
@@ -183,7 +182,7 @@ function Employee(name, job, salary) {
 	this.salary = salary;
 
 	// methods
-	this.profile = function() {
+	this.profile = function () {
 		var p = ''
 		p += "Employee Name: " + this.name + "\n"
 		p += "Employee Job: " + this.job + "\n"

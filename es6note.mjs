@@ -145,7 +145,7 @@ let instanceOfSomeClass = new SomeClass()
 class AnotherClass { }
 let instanceOfAnotherClass = new AnotherClass()
 
-// classes have a contructor
+// classes have a constructor
 // Getters and Setters - these are just property decorated
 // as in they are called as properties instead of function
 class PetClass {
@@ -175,7 +175,7 @@ class PetClass {
 let proof = new PetClass('proof', 'baked rice with tuna')
 console.log(`${proof.petName}'s favourite meal is ${proof.favFood}`)
 
-proof.favFood = "Banku and ground nut stew!!"
+proof.favFood = "Banku and ground nut stew!! (:"
 console.log(`${proof.petName}'s favourite meal is ${proof.favFood}`)
 
 console.log()
@@ -229,7 +229,7 @@ class JavaScript {
         this.purpose = purpose
     }
 
-    // methods are created withour the function keyword
+    // methods are created without the function keyword
     sayHello() {
         let returnVal = `This is some kind of javascript called, ${this.jsName}\n`
         returnVal += `${this.jsName} is used for ${this.purpose}`
@@ -253,7 +253,7 @@ import { add, times } from './utils.mjs'
 console.log(add(2, 3))
 console.log(times(2, 3))
 
-import { div as divide, mod as remiander } from './utils.mjs'
+import { div as divide, mod as remainder } from './utils.mjs'
 console.log(divide(2, 3))
-console.log(remiander(2, 3))
+console.log(remainder(2, 3))
 console.log();

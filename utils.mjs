@@ -5,4 +5,4 @@ const div = (a, b) => (b !== 0) ? a / b : 0;
 const mod = (a, b) => (b !== 0) ? a % b : 0;
 const sub = (a, b) => a - b;
 
-export {div, mod, sub}
+export { div, mod, sub }
