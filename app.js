@@ -190,7 +190,6 @@ function Employee(name, job, salary) {
 
 		return p
 	}
-
 }
 
 // create a instance of the object Employee
